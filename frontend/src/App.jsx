@@ -16,8 +16,11 @@ function App() {
         .map((item) => item.trim())
         .filter((item) => item);
 
+        const API_URL =
+        "https://chitkara-fullstack.onrender.com/bfhl";
+      
       const res = await axios.post(
-        "https://chitkara-fullstack.onrender.com/bfhl",
+        API_URL,
         { data }
       );
 
