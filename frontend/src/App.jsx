@@ -17,7 +17,7 @@ function App() {
         .filter((item) => item);
 
       const res = await axios.post(
-        "http://localhost:3000/bfhl",
+        "https://chitkara-fullstack.onrender.com",
         { data }
       );
 
